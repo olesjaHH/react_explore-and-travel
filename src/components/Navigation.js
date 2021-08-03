@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
     return ( 
@@ -6,10 +6,10 @@ const Navigation = () => {
             <img src="./img/logo.png " alt="Logo" />
             <div>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/destination">Destinations</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/partner">Partner</Link></li>
+                    <li><NavLink activeStyle={{ color: '#202336'}} to="/" exact>Home</NavLink></li>
+                    <li><NavLink activeStyle={{ color: '#202336'}} to="/destination">Destinations</NavLink></li>
+                    <li><NavLink activeStyle={{ color: '#202336'}} to="/about">About</NavLink></li>
+                    <li><NavLink activeStyle={{ color: '#202336'}} to="/partner">Partner</NavLink></li>
                 </ul>
                 <input type="button" value="Login" />
                 <input type="button" value="Register" />

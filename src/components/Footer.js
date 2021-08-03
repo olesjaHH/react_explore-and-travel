@@ -2,7 +2,7 @@
 const Footer = () => {
     return ( 
         <footer>
-            <section>
+            <section className="footer-section-one">
                 <article>
                     <img src="./img/logo.png " alt="Logo" />
                     <p>

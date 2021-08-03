@@ -1,6 +1,5 @@
 import './App.scss';
 import React from "react";
-//import Home from './components/Home';
 import Destination from './components/Destination';
 import About from './components/About';
 import Partner from './components/Partner';
@@ -11,7 +10,6 @@ import {
   Route
 } from "react-router-dom";
 import Home from './components/Home';
-import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Header from './components/Header';
 

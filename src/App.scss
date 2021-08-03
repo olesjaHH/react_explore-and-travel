@@ -7,26 +7,111 @@ $font-color-dark: #202336;
 $font-color-light: #B8BECD;
 $color-orange: #FB8F1D;
 $background-grey: #F9F9FB;
+$color-white: #FFFFFF;
 
+%button_style {
+    background: $color-orange;
+    color: $color-white;
+    width: 110px;
+    height: 30px;
+    outline-style: none;
+    border-style: none;
+    border-radius: 5px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    article {
+        width: 50%;
+        margin-left: 10%;
+        h1 {
+            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            width: 50%;
+        }
+        .line {
+            content: "";
+            background: $font-color-dark;
+            width: 30px;
+            height: 2px;
+            margin-bottom: 3%;
+        }
+        select {
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            outline-style: none;
+            margin: 2% 5% 3% 0;
+            padding: 2%
+        }
+        input {
+            @extend%button_style;
+            margin-top: 3%;
+        }
+    }
+    img {
+        width: 45%;
+        margin-right: 5%;
+    }
+}
 .navigation {
     display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
     padding: 3%;
     img {
         width: 30px;
         height: 30px;
+        padding-left: 7%;
     }
     div {
         display: flex;
+        input {
+            width: 90px;
+            height: 30px;
+            margin: 10px 5px 0 0;
+            outline-style: none;
+            border-style: none;
+            border-radius: 5px;
+        }
+        input:first-of-type {
+            background: $color-white;
+            color: $color-orange;
+            border: 1px solid $color-orange;
+        }
+        input:last-of-type {
+            @extend%button_style;
+            margin-right: 70px;
+            width: 90px;
+        }
     }
     ul {
         display: flex;
         li {
             list-style: none;
+            padding-right: 30px;
             a {
                 text-decoration: none;
+                color: $font-color-light;
             }
+        }
+    }
+}
+
+footer {
+    background: $background-grey;
+    .footer-section-one {
+        display: flex;
+        padding-top: 5%;
+        article:first-of-type {
+            padding-left: 10%;
+            width: 30%;
         }
     }
 }
