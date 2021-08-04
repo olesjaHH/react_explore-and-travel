@@ -9,7 +9,7 @@ const About = () => {
              text="Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip."
              btn="Download"
              btnTarget=""
-             direction={false}
+             direction={"row-reverse"}
          />
     </section>
      );

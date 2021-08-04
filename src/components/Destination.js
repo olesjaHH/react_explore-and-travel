@@ -11,10 +11,13 @@ const Destination = () => {
     return ( 
         <div className="featured">
             <h2>Featured destinations <span className="view">View all</span></h2> 
-        {featuredArray.map((ele, i) => <FeaturedImg
-            key={i}
-            data={ele}
-        />)}
+            <figure className="featured-img">
+                {featuredArray.map((ele, i) => <FeaturedImg
+                key={i}
+                data={ele}
+            />)}
+            </figure>
+        
     </div>
      );
 }

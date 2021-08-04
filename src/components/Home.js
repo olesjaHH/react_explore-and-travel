@@ -11,7 +11,7 @@ const Home = (props) => {
                 lead the way"
                 btn="Learn more"
                 btnTarget=""
-                direction={false}
+                direction={"row"}
             />
         </section>
      );

@@ -9,7 +9,7 @@ const trendingArray = [
 const Partner = () => {
     return ( 
         <section>
-            <article>
+            <article className="testimonial">
                 <div>
                     <h2>Testimonials</h2>
                     <img src="/img/5stars.png" alt="stars" />
@@ -21,12 +21,15 @@ const Partner = () => {
                     <img src="/img/testimonial_photo.png" alt="testimonial" />
                 </figure>
             </article>
+            
             <div className="featured">
             <h2>Trending stories <span className="view">View all</span></h2> 
-        {trendingArray.map((ele, i) => <FeaturedImg
-            key={i}
-            data={ele}
-        />)}
+            <figure className="featured-img">
+                {trendingArray.map((ele, i) => <FeaturedImg
+                key={i}
+                data={ele}
+                />)}
+            </figure>
     </div>
         </section>
      );

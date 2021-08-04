@@ -47,6 +47,7 @@ const Footer = () => {
                     </table>
                 </article>
             </section>
+            <div className="line-long"></div>
            <section className="socialmedia">
                 <a href="twitter"> <img src="./img/1_twitter.png" alt="twitter" /></a>
                 <a href="facebook"> <img src="./img/2_facebook.png" alt="facebook" /></a>

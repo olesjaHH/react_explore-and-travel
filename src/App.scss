@@ -23,6 +23,9 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
 }
+
+/* ------- Header + Nav ---------------- */
+
 .header {
     display: flex;
     justify-content: center;
@@ -104,14 +107,133 @@ body {
     }
 }
 
+/* ------- Footer ----------- */
 footer {
     background: $background-grey;
+    color: $font-color-light;
+    font-size: .8rem;
     .footer-section-one {
         display: flex;
         padding-top: 5%;
         article:first-of-type {
             padding-left: 10%;
-            width: 30%;
+            width: 25%;
+            img {
+                width: 30px;
+            }
+            p {
+                line-height: 1.3rem;
+                padding-bottom: 5%;
+            }
+        }
+        article:last-of-type {
+            table {
+                padding-left: 20%;
+                padding-bottom: 7%;
+                th {
+                    color: $font-color-dark;
+                    text-align: left;
+                    padding-bottom: 3%;
+                }
+                td {
+                    width: 250px;
+                    padding-bottom: 1%;
+                }
+            }
+        }
+    }
+    .line-long {
+        content: "";
+        width: 80%;
+        height: 1px;
+        background: $font-color-light;
+        margin-left: 10%;
+        
+    }
+    .socialmedia {
+        display: flex;
+        justify-content: center;
+        margin: 2% auto;
+        a {
+            padding-right: 3%;
         }
     }
 }
+
+/* Home / About */
+
+.two-columns {
+    display: flex;
+    margin-top: 10%;
+    .img {
+        
+        img {
+         width: 90%;
+        }
+    }
+    .text {
+        width: 50%;
+        padding: 5% 10% 10%;
+        h1 {
+            font-family: 'Playfair Display', serif; 
+            font-size: 2rem;
+        }
+        p {
+            color: $font-color-light;
+            line-height: 1.5rem;
+            margin-bottom: 10%;
+            font-size: .9rem;
+        }
+        a {
+            @extend%button_style;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+    }
+  }
+
+/* Destination */
+
+.featured {
+    h2 {
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        font-family: 'Playfair Display', serif; 
+        .view {
+            font-size: .8rem;
+            color: $color-orange;
+            padding-right: 5%;
+            font-family: 'Inter', sans-serif;
+        }
+        .view::after {
+            content: " >";
+        }
+    }
+    .featured-img {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        margin: 0 7%;
+    }
+}
+
+/* Testimonial */
+
+.testimonial {
+    display: flex;
+    margin: 10% 10% 7% 10%;
+   h2 {
+    font-family: 'Playfair Display', serif; 
+     padding-bottom: 15%;
+   }
+   p:first-of-type {
+       width: 60%;
+       padding-bottom: 5%;
+   }
+   p:nth-of-type(2) {
+       font-size: .7rem;
+   }
+}
+  
